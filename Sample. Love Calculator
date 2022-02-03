@@ -2,6 +2,8 @@
 # What should we call you? Brad Pitt
 # What is their name? Jennifer Aniston
 # Sample output: Your score is 73%
+# GitHub: https://github.com/osigurati
+# You can also use a for loop to make the code small!
 
 Name1=(input("What should we call you? "))
 Name2=(input("What is their name? "))
