@@ -1,0 +1,20 @@
+
+travel_log=[
+{"country": "France",
+"cities_visited": ["Paris","Lille","Dijon"],
+"Total_Vist": 12
+},
+{"country": "Germany",
+"cities_visited": ["Berlin"],
+"Total_Visit": 4
+}
+]
+def add_new_country(country_visited,cities_visited,times_visited):
+    new_country={}
+    new_country["country"]=country_visited
+    new_country['cities_visited']=cities_visited
+    new_country["Total_Visit"]=times_visited
+    travel_log.append(new_country)
+
+add_new_country("Russia",["Moscow","Saint Petersberg"],2)
+print(travel_log)
