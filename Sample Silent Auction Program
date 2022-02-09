@@ -1,0 +1,27 @@
+# GitHub: https://github.com/osigurati
+
+print("Welcome to auction program")
+bids={}
+N=0
+
+def highest_bid(bidding_record):
+    winner_bid=0
+    winner=""
+    for bidder in bidding_record:
+        bid_amount = bidding_record[bidder]
+        if bid_amount>winner_bid:
+            winner_bid=bid_amount
+            winner= bidder
+    print(f"Winner is Mr.{winner} with bid of ${winner_bid}")
+
+while N!=1:
+    Name=input("Enter your name: ")
+    Amount=int(input("Enter the bid amount: $"))
+    bids[Name]=Amount
+    store=input("Are there more bidders? Type'Yes' or 'No' ")
+    if store=="Yes":
+        N=0
+        # clear(): Needs to be defined to clear previous bids
+    else:
+        N=1
+        highest_bid(bids)
